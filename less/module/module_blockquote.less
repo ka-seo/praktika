@@ -1,0 +1,60 @@
+@import "../vars";
+@import "../elements";
+
+blockquote {
+  background: #f3ebe3;
+  border: 0;
+  line-height: 1.6em;
+  margin: 50px auto;
+  padding: 45px 45px 45px 120px;
+  position: relative;
+
+  &:before {
+    color: #c5b9ae;
+    content: '\201C';
+    line-height: 1;
+    font-family: @font-name-2;
+    font-size: 5.625rem;
+    position: absolute;
+    left: 45px;
+    top: 25px;
+  }
+
+  p {
+    display: inline;
+  }
+
+  cite {
+    font-size: .8rem;
+    display: block;
+    margin-top: 5px;
+
+    &:before {
+      content: "\2014 \2009";
+    }
+  }
+}
+
+@media (max-width: 767.5px) {
+  blockquote {
+    padding: 25px 25px 25px 80px;
+
+    &:before {
+      font-size: 5.625rem;
+      left: 20px;
+      top: 5px;
+    }
+  }
+}
+
+@media (max-width: 479.5px) {
+  blockquote {
+    padding: 35px 20px 15px 20px;
+
+    &:before {
+      font-size: 3.5rem;
+      left: 16px;
+      top: 5px;
+    }
+  }
+}

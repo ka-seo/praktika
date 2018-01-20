@@ -1,0 +1,119 @@
+@import "../vars";
+@import "../elements";
+
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  .background-size(cover);
+
+  &-vk {
+    background-image: url("@{img}/vk.svg");
+    width: 20px;
+    height: 20px;
+  }
+
+  &-fb {
+    background-image: url("@{img}/facebook.svg");
+    width: 20px;
+    height: 20px;
+  }
+
+  &-tw {
+    background-image: url("@{img}/twitter.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-tg {
+    background-image: url("@{img}/telegram.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-rss {
+    background-image: url("@{img}/rss.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-search {
+    background-image: url("@{img}/search.svg");
+    width: 20px;
+    height: 20px;
+  }
+  &-hamburger {
+    background-image: url("@{img}/nav-icon.svg");
+    width: 25px;
+    height: 20px;
+  }
+
+  &-ellipsis {
+    background-image: url("@{img}/ellipsis.svg");
+    width: 20px;
+    height: 4px;
+  }
+
+  &-email {
+    background-image: url("@{img}/letter.svg");
+    width: 17px;
+    height: 10px;
+  }
+
+  &-phone {
+    background-image: url("@{img}/phone.svg");
+    width: 10px;
+    height: 10px;
+
+    &-big {
+      width: 20px;
+      height: 20px;
+    }
+    &-inverse {
+      background-image: url("@{img}/phone-inverse.svg");
+    }
+  }
+
+  &-plain {
+    background-image: url("@{img}/mediakit.svg");
+    width: 17px;
+    height: 14px;
+  }
+
+  &-doc {
+    background-image: url("@{img}/user_agreement.svg");
+    width: 11px;
+    height: 14px;
+  }
+
+  &-map {
+    background-image: url("@{img}/icon-map-point.png");
+    width: 16px;
+    height: 21px;
+  }
+
+  &-up {
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: yellowgreen;
+    border-top: 0;
+  }
+
+  &-down {
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: orangered;
+    border-bottom: 0;
+  }
+
+  &-arrow-right {
+    background-image: url("@{img}/arrow_r.svg");
+    width: 12px;
+    height: 20px;
+  }
+  &-arrow-left {
+    background-image: url("@{img}/arrow_l.svg");
+    width: 12px;
+    height: 20px;
+  }
+}

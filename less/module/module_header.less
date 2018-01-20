@@ -1,0 +1,115 @@
+@import "../vars";
+@import "../elements";
+
+
+/********************************************
+ HEADER
+********************************************/
+.header {
+  width: 100%;
+  position: relative;
+  padding:0;
+  margin-bottom: 20px;
+  .clearfix();
+
+  > .container {
+    padding-left: 0;
+    padding-right: 0;
+
+  }
+
+  &__container {
+    background: #fff;
+    padding: 15px;
+    .clearfix();
+  }
+
+  &-center {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    .clearfix();
+  }
+}
+
+
+@media (min-width: 1240px) {
+  .header {
+
+    &__container {
+      width: 100%;
+      .clearfix();
+    }
+
+    .logo,
+    &-center,
+    .socials {
+      float: left;
+    }
+
+    .socials {
+      float: right;
+      margin-top: 15px;
+    }
+
+    &-center {
+      width: ~'calc(100% - 290px)';
+      margin-top: 15px;
+    }
+  }
+
+  .menu-bar {
+    display: table;
+    width: 100%;
+    padding: 0;
+    .clearfix();
+
+    .nav,
+    .search-bar {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1239.5px) {
+  .header {
+
+    &__container {
+      width: 100%;
+      .clearfix();
+    }
+
+    .logo,
+    &-center,
+    .socials {
+      float: left;
+      vertical-align: middle;
+    }
+
+    .socials {
+      float: right;
+    }
+
+    &-center {
+      float: left;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  .menu-bar {
+    display: table;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    .clearfix();
+
+    .nav,
+    .search-bar {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+

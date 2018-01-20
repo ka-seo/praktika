@@ -1,0 +1,105 @@
+@import "../vars";
+@import "../elements";
+
+
+.comments {
+  background: #fff;
+  padding: 12.5px 25px;
+  margin-bottom: 20px;
+}
+
+.comment {
+
+  .children {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      margin-left: 50px;
+    }
+  }
+
+  &-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__body {
+    margin-bottom: 30px;
+  }
+
+  &__header {
+    margin: 0 0 10px;
+  }
+
+  &__author {
+    font-size: 1rem;
+    font-family: @font-name-3;
+  }
+
+  &__date {
+    font-size: 80%;
+    color: #818181;
+    margin-left: 15px;
+  }
+
+  &__content {
+    margin: 0;
+    line-height: 1.4;
+
+    p {
+      margin: 10px 0;
+    }
+  }
+
+  &__footer {
+    margin: 10px 0 0;
+  }
+
+  &__user-reply {
+    color: #818181;
+    position: relative;
+    margin-bottom: 10px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -25px;
+      top: 1px;
+      display: inline-block;
+      vertical-align: middle;
+      background: data-uri('@{img}/icon-reply.png') no-repeat;
+      width: 18px;
+      height: 14px;
+      .background-size(cover);
+    }
+  }
+
+  &__reply {
+    display: inline;
+    color: #818181;
+    text-decoration: underline;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      background: data-uri('@{img}/icon-chevron.png') no-repeat;
+      width: 10px;
+      height: 6px;
+      margin-left: 5px;
+      .background-size(cover);
+    }
+  }
+
+  &-form {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .comments {
+    padding: 25px 50px;
+  }
+}

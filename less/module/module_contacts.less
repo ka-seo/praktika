@@ -1,0 +1,37 @@
+@import "../vars";
+@import "../elements";
+
+//form in sidebar
+#form-bid {
+  .form-group {
+    a {
+      color: @color-base;
+      
+      &:hover {
+        color: @color-link-hover;
+      }
+    }
+  }
+}
+
+.contacts {
+  list-style-type: none;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-family: @font-name-2;
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px 30px;
+  }
+  
+  a {
+    color: @color-base;
+    text-decoration: none;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+}

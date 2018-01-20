@@ -1,0 +1,32 @@
+@import "../vars";
+@import "../elements";
+
+.form {
+  &_horizontal {
+
+  }
+  &_inline {
+    .form-group {
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+    }
+    .form-group + .form-group {
+      margin-left: 10px;
+    }
+  }
+}
+
+//768
+@media (max-width: 48em) {
+  .form {
+    &_inline {
+      .form-group {
+        display: block;
+      }
+      .form-group + .form-group {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../vars";
+@import "../elements";
+
+/********************************************
+#FORM elements
+********************************************/
+::-webkit-input-placeholder { color: @color-placeholder; }
+:-moz-placeholder { color: @color-placeholder; opacity:  1; }
+::-moz-placeholder { color: @color-placeholder; opacity:  1; }
+:-ms-input-placeholder { color: @color-placeholder; }
+
+/********************************************
+ INPUT ELEMENTS
+********************************************/
+.input-field_text,
+.input-field_textarea {
+  padding: 10px 15px;
+  height: 43px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  color: @color-base;
+  font-family: @font-base;
+  font-weight: normal;
+  font-size: 1rem;
+  margin:0;
+  outline: none !important;
+  .rounded(0px);
+
+  &:focus,
+  &.focused {
+    border-color: @color-add-1;
+    outline:none !important;
+    .transition(all, .2s, ease-in-out)
+  }
+
+  &:disabled {
+    background-color: #ddd;
+    padding-right: 15px;
+  }
+  &.error {
+    border-color: #ef4a4a;
+  }
+  &.valid {
+
+  }
+}
+
+.input-field_textarea  {
+  width: 100%;
+  height: 110px;
+  padding: 10px;
+  resize: none;
+}
+label {
+  cursor: pointer;
+}
+span.error,
+div.error {
+  font-size: 14px;
+  color: #ef4a4a;
+}
+input.error,
+input.valid {
+  border: 1px solid;
+  outline: none;
+  .drop-shadow(none);
+}
+input.error {
+  border-color: #ef4a4a;
+}
+input.valid {
+  border-color: #03AD60;
+}

@@ -1,0 +1,51 @@
+@import "../vars";
+@import "../elements";
+
+.input-field__checkbox {
+  visibility: hidden;
+  position: absolute;
+  left: -9999em;
+
+  & ~ label {
+    display: table;
+
+    .chbox_cell {
+      display: table-cell;
+      vertical-align: middle;
+
+      .chbox_bd {
+        position: relative;
+        display: block;
+        width: 26px;
+        height: 26px;
+        margin: 0 10px 0 0;
+        background: #fff;
+        border: 1px solid #cbcbcb;
+        cursor: pointer;
+        .rounded(2px);
+
+        .chbox_p {
+          position: absolute;
+          left: 50%;
+          margin: 4px 0 0 -8px;
+          background: transparent;
+          display: inline-block;
+          line-height: 1em;
+          width: 16px;
+          height: 16px;
+          .rounded(2px);
+        }
+      }
+    }
+  }
+
+  &:checked ~ label .chbox_bd .chbox_p {
+    background: @color-add-1;
+    .transition();
+  }
+
+  ~ span.error {
+    margin-bottom: 3px;
+    display: inline-block;
+  }
+}

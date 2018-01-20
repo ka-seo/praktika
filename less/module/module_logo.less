@@ -1,0 +1,39 @@
+@import "../vars";
+@import "../elements";
+
+
+/********************************************
+ LOGO
+********************************************/
+.logo {
+
+  &_header {
+    float: left;
+    display: block;
+    width: 165px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__img {
+    display: block;
+    background: data-uri('@{img}/praktika_logo.svg') no-repeat;
+    width: 162px;
+    height: 49px;
+    .background-size(contain);
+    .text-hide();
+  }
+
+}
+
+
+//
+//@media (max-width: 480px) {
+//  .logo {
+//    display: block;
+//    float: none;
+//    width: 100%;
+//  }
+//}

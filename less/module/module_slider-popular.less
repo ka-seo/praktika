@@ -1,0 +1,80 @@
+@import "../vars";
+@import "../elements";
+
+.slider {
+  background: #242424;
+  padding: 25px 0;
+  margin-bottom: 14px;
+  overflow: hidden;
+
+  &-row {
+
+  }
+
+  &__top {
+    padding: 0 14px;
+    margin-bottom: 25px;
+    display: table;
+    width: 100%;
+  }
+
+  &__title,
+  &__nav {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: @font-name-2;
+  }
+
+  &__nav {
+    text-align: right;
+  }
+
+  &__btn {
+    padding: 0 7px;
+    display: inline-block;
+    vertical-align: middle;
+
+    .transition(opacity);
+    cursor: pointer;
+
+    &:hover {
+      .opacity(.7);
+    }
+  }
+
+  &__content {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider {
+    //margin-right: 0;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .slider {
+    &-row {
+      margin-left: 0;
+    }
+
+    &__title {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 360.5px) {
+  .slider {
+    &__title {
+      width: 190px;
+    }
+  }
+}

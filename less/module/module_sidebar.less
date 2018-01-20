@@ -1,0 +1,56 @@
+@import "../vars";
+@import "../elements";
+
+.sidebar {
+  background: #fff;
+  padding: 30px;
+  height: 100%;
+  margin-bottom: 15px;
+
+  &_transp {
+    background: none;
+  }
+
+  &__title {
+    font-family: @font-name-2;
+  }
+
+  &__footer {
+    margin-top: 15px;
+    text-align: right;
+
+    a {
+      color: #8A8A8A;
+    }
+  }
+
+  h6 {
+    color: #cecece;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    margin-bottom: 15px;
+
+    .col-xs-5:nth-child(2n+1) {
+      clear: left;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.5px) {
+  .sidebar {
+    [class*='col-sm']:nth-child(3),
+    [class*='col-sm']:nth-child(4){
+      .post {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.no-p {
+  padding: 0;
+}

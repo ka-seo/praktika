@@ -1,0 +1,59 @@
+@import "../vars";
+@import "../elements";
+
+.page-404 {
+  background: #fff url('@{img}/404-bg.jpg') no-repeat center bottom;
+  .background-size(100% auto);
+  
+  .header__container {
+    background: transparent;
+  }
+
+  &__center {
+    margin: auto;
+    width: 100%;
+    max-width: 990px;
+  }
+
+  &__title {
+    font-family: @font-name-2;
+    font-size: 6.25rem;
+    color: #e9e8e8;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin: 0 auto 30px;
+  }
+
+  &__desc {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .search-form_result {
+    margin-bottom: 50px;
+
+    .search-form__input {
+      width: ~'calc(100% - 135px)';
+    }
+  }
+
+}
+
+.header.search-active {
+  background: #fff;
+}
+
+@media (max-width: 479.5px) {
+  .page-404 {
+    .search-form_result {
+      .search-form__input {
+        width: 100%;
+      }
+      .search-form__button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
